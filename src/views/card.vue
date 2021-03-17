@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <div>{{ title }}</div>
+    <div class="title">{{ title }}</div>
     <div>{{ path }}</div>
   </div>
 </template>
@@ -19,4 +19,11 @@
   })
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+  .card {
+    border: 1px solid red;
+    .title {
+      background: yellow;
+    }
+  }
+</style>>
