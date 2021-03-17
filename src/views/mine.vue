@@ -23,6 +23,10 @@
         title: '这里属于mine.vue',
         path: '/mine'
       }
+    },
+    async mounted() {
+      let res = await this.$http.get('http://192.168.137.12:3000/mock/51/department/list')
+      console.log('res', res);
     }
   })
 </script>
