@@ -1,0 +1,13 @@
+@mixin borderRaduis($radius) {
+  border-radius: $radius;
+}
+
+@mixin border($color, $position:null, $width:1px, $style:solid) {
+  @if $position {
+    border-#{$position}: $width $style $color;
+  }
+
+  @else {
+    border: $width $style $color;
+  }
+}

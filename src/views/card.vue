@@ -23,7 +23,7 @@
   .card {
     border: 1px solid red;
     .title {
-      background: yellow;
+      background: $green-40cc95;
     }
   }
 </style>>

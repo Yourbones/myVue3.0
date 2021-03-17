@@ -1,0 +1,158 @@
+.flex {
+  display: flex;
+}
+
+//字体大小
+.f-s-14 {
+  font-size: 14px;
+}
+
+.f-s-16 {
+  font-size: 16px;
+}
+
+.f-s-18 {
+  font-size: 18px;
+}
+
+.f-s-20 {
+  font-size: 20px;
+}
+
+.f-s-32 {
+  font-size: 32;
+}
+
+//字粗
+.f-w-400 {
+  font-weight: 400;
+}
+
+.f-w-500 {
+  font-weight: 500;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+//按钮
+.big-btn {
+  width: 126px;
+  height: 46px;
+  border-radius: 23px;
+  cursor: pointer;
+  background: $green-2ca7b3;
+  color: $white;
+  font-size: $f-s-20;
+  outline: none;
+}
+
+.normal-btn__green {
+  border: 1px solid $green-2ca7b3;
+  outline: none;
+  color: $white;
+  width: 86px;
+  height: 46px;
+  border-radius: 23px;
+  background: $green-2ca7b3;
+  cursor: pointer;
+  font-size: $f-s-20;
+  box-shadow: 0px 4px 10px 0px rgba(44, 167, 179, 0.3)
+}
+
+.small-btn__green {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background: $green-2ca7b3;
+  color: $white;
+  box-shadow: 0px 4px 10px 0px rgba(44, 167, 179, 0.3);
+  font-size:$f-s-20;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.normal-btn__gray {
+  outline: none;
+  width: 86px;
+  height: 46px;
+  cursor: pointer;
+  font-size: $f-s-20;
+  border-radius: 23px;
+  color: $gray-999;
+  background: $white;
+  border: 1px solid $gray-999;
+}
+
+.c-4e9fec {
+  color: #4E9FEC;
+}
+
+.c-eeB74e {
+  color: #EEB74E;
+}
+
+.c-64bf9B {
+  color: #64BF9B;
+}
+
+.c-8b91e7 {
+  color: #8b91e7;
+}
+
+.c-2ca7b3 {
+  color: #2CA7B3;
+}
+
+.c-fff {
+  color: #fff;
+}
+.c-ccc{
+  color: #ccc;
+}
+.c-333 {
+  color: #333;
+}
+
+.c-666 {
+  color: #666;
+}
+
+.c-999 {
+  color: #999;
+}
+
+.c-ff7474 {
+  color: #FF7474;
+}
+
+.c-f5882f {
+  color: #F5882F;
+}
+
+.c-f9Be1f {
+  color: #F9BE1F;
+}
+
+.c-40cc95 {
+  color: #40CC95;
+}
+
+.c-6c95bc {
+  color: #6C95BC;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.t-r {
+  text-align: right;
+}
+
+
+.cursor {
+  cursor: pointer;
+}

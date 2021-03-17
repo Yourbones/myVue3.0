@@ -3,10 +3,11 @@ import App from './App.vue'
 import { store, key } from './store'
 import router from './router'
 import ElementPlus from 'element-plus'
-import 'element-plus/lib/theme-chalk/index.css'
 import { AxiosInstance } from 'axios'
 // 二次封装的 axios 实例
 import http from './utils/request'
+
+import './styles/index.scss'
 
 declare module "@vue/runtime-core" {
   interface ComponentCustomProperties {
