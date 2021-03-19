@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div>这里属于App.vue</div>
     <router-view></router-view>
   </div>
 </template>
