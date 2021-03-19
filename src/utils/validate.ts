@@ -4,24 +4,24 @@
  * @Description: 校验相关
  */
 interface Validate {
-  [key: string]: (str: string, rule: RegExp) => boolean;
+  [key: string]: (str: string) => boolean;
 }
 const validate: Validate = {
-  phone: function(str: string, rule: RegExp): boolean {
-    const reg = rule || /^1[3456789]\d{9}$/
+  phone: function(str: string): boolean {
+    const reg = /^1[3456789]\d{9}$/
 
     return reg.test(str)
   },
 }
 
 interface ValidateValue {
-  (validateName: string, emptyMsg: string, errorMsg: string): (rule: RegExp, value: string, callback: Function) => void
+  (validateName: string, emptyMsg: string, errorMsg: string): (rule: any, value: string, callback: Function) => void
 }
 export const formValidation: ValidateValue = (validateName, emptyMsg, errorMsg) => async (rule, value, callback) => {
   if (!value) {
     console.log('The value is empty!');
     callback(new Error(emptyMsg))
-  } else if (await validate[validateName](value, rule)) {
+  } else if (await validate[validateName](value)) {
     console.log('The value is correct!');
     callback()
   } else {
