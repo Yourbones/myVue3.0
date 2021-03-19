@@ -11,7 +11,7 @@ declare module 'axios' {
 }
 
 const http: AxiosInstance = axios.create({
-  baseURL: (import.meta.env.NODE_ENV === 'development' ? '' : import.meta.env.VUE_APP_API_ROOT) as string,
+  baseURL: (import.meta.env.NODE_ENV === 'development' ? '' : import.meta.env.VITE_APP_API_ROOT) as string,
   isLoading: true,  // 是否加载全局 loading
   catchError: true, // 是否统一处理异常
 })
