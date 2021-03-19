@@ -5,18 +5,16 @@
   background: linear-gradient(180deg, #1A95A1, #2CA7B3);
   align-items: center;
 
-  ::v-deep {
-    .el-input__inner {
-      color: $gray-999;
-      font-size: $f-s-16;
-      border: 0 none;
-      border-radius: 0;
-      padding-left: 0;
-    }
+  :deep(.el-input__inner) {
+    color: $gray-999;
+    font-size: $f-s-16;
+    border: 0 none;
+    border-radius: 0;
+    padding-left: 0;
+  }
 
-    .el-form-item__error {
-      font-size: $f-s-14;
-    }
+  :deep(.el-form-item__error) {
+    font-size: $f-s-14;
   }
 }
 
