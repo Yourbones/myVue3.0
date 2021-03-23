@@ -1,0 +1,148 @@
+::v-deep {
+  .el-dialog {
+    border-radius: 20px;
+    height: 520px;
+    overflow: hidden;
+    &__header {
+      padding: 0;
+    }
+    &__body {
+      padding: 20px 60px;
+      overflow: auto;
+    }
+    &__headerbtn {
+      font-size: 20px;
+      color: #d9d9d9;
+    }
+  }
+  .el-input__inner {
+    margin-top: 2px;
+    border: 0 none;
+    background-color: transparent;
+    padding-left: 20px;
+    height: 48px;
+    line-height: 48px;
+    font-size: $f-s-18;
+    @include borderRaduis(23px);
+    border: 0 none;
+    padding-left: 20px;
+    height: 47px;
+    line-height: 47px;
+
+    &::placeholder {
+      color: $gray-999;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $gray-999;
+    }
+
+    &:-moz-placeholder {
+      color: $gray-999;
+    }
+
+    &::-moz-placeholder {
+      color: $gray-999;
+    }
+
+    &:-ms-input-placeholder {
+      color: $gray-999;
+    }
+  }
+}
+.multiSelectPop-title {
+  height: 62px;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+
+  & > div:nth-child(1) {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333333;
+    margin-right: 30px;
+  }
+  & > div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+
+    & > div:nth-child(2) {
+      font-size: 16px;
+      font-weight: 400;
+      color: #2ca7b3;
+      margin-left: 10px;
+    }
+  }
+}
+.multiSelectPop-header {
+  margin-top: 20px;
+  align-items: center;
+
+  &__search {
+    margin-right: 99px;
+    align-items: center;
+    @include border($gray-ccc);
+    border-radius: 30px;
+    width: 501px;
+    height: 47px;
+    line-height: 47px;
+  }
+}
+.icon-search {
+  width: 24px;
+  margin-right: 20px;
+}
+
+.multiSelectPop-container {
+  flex-wrap: wrap;
+  height: 418px;
+  overflow-y: auto;
+  padding-bottom: 100px;
+  align-content: flex-start;
+  margin-top: 30px;
+  width: 700px;
+
+  & > .multiSelectPop-container__list:nth-child(6n) {
+    margin-right: 0px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    margin-right: 75px;
+    margin-bottom: 41px;
+    cursor: pointer;
+    position: relative;
+    height: 75px;
+  }
+
+  &__avator {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: #2ca7b3;
+    color: #fff;
+    line-height: 50px;
+  }
+
+  &__name {
+    text-align: center;
+    margin-top: 6px;
+    color: #666666;
+    justify-content: center;
+
+    &--active {
+      color: #2CA7B3;
+    }
+  }
+
+  &__select {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: -4px;
+  }
+}

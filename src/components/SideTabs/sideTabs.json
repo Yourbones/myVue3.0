@@ -1,0 +1,40 @@
+[{
+    "name": "",
+    "color": "c-4e9fec",
+    "defaultColor": "c-999",
+    "triangleColor": "triangle-4e9fec",
+    "hiddenTriang": "triangle-hidden",
+    "isHover": false,
+    "dataNum": 0,
+    "path": ""
+  }, {
+    "name": "",
+    "color": "c-eeB74e",
+    "defaultColor": "c-999",
+    "triangleColor": "triangle-eeb74e",
+    "hiddenTriang": "triangle-hidden",
+    "isHover": false,
+    "dataNum": 0,
+    "path": ""
+  },
+  {
+    "name": "",
+    "color": "c-64bf9B",
+    "defaultColor": "c-999",
+    "triangleColor": "triangle-64bf9B",
+    "hiddenTriang": "triangle-hidden",
+    "isHover": false,
+    "dataNum": 0,
+    "path": ""
+  },
+  {
+    "name": "",
+    "color": "c-8b91e7",
+    "defaultColor": "c-999",
+    "triangleColor": "triangle-8b91e7",
+    "hiddenTriang": "triangle-hidden",
+    "isHover": false,
+    "dataNum": 0,
+    "path": ""
+  }
+]

@@ -1,0 +1,141 @@
+.demand-content {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #f7f7f7;
+  min-height: 780px;
+
+  &__tab {
+    position: absolute;
+    left: 30px;
+    width: 90px;
+    background-color: #f7f7f7;
+  }
+
+  &__detail {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.demand-tab__item {
+  height: 100px;
+  background-color: #fff;
+  font-size: 16px;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  >p {
+    padding-top: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  &:first-child {
+    border-right: 4px solid #4E9FEC;
+  }
+
+  &:first-child:hover {
+    background: #A3CEF2;
+    color: #fff;
+  }
+
+  &:nth-child(2) {
+    border-right: 4px solid #EEB74E;
+  }
+
+  &:nth-child(2):hover {
+    background: #F3D69D;
+    color: #fff;
+  }
+
+  &:nth-child(3) {
+    border-right: 4px solid #64BF9B;
+  }
+
+  &:nth-child(3):hover {
+    background: #A8E2C1;
+    color: #fff;
+  }
+
+  &:last-child {
+    border-right: 4px solid #8b91e7;
+  }
+
+  &:last-child:hover {
+    background: #cccff9;
+    color: #fff;
+  }
+}
+
+.active-item {
+  font-size: 20px;
+  color: #2CA7B3;
+}
+
+.default-item {
+  font-size: 20px;
+  color: #999;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-r-50 {
+  margin-right: 50px;
+}
+
+.m-r-30 {
+  margin-right: 30px;
+}
+
+.m-b-50 {
+  margin-bottom: 50px;
+}
+
+.f-s-24 {
+  font-size: 24px;
+}
+
+// 缺省页
+.defult-content1 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-right: 120px;
+  background-color: #f7f7f7;
+  flex-direction: column;
+
+  &__detail {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 780px;
+    padding-top: 140px;
+
+    >p {
+      font-size: 18px;
+    }
+  }
+}

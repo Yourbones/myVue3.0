@@ -1,0 +1,27 @@
+.el-breadcrumb {
+  padding-top: 30.5px;
+  padding-bottom: 30.5px;
+  margin-left: 30px;
+  font-size: $f-s-16;
+}
+
+.el-breadcrumb__inner.is-link,
+.el-breadcrumb__inner a {
+  color: $gray-666;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.el-breadcrumb__inner.is-link,
+.el-breadcrumb__inner a:hover {
+  color: $gray-666;
+}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__inner,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner:hover,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a,
+.el-breadcrumb__item:last-child .el-breadcrumb__inner a:hover {
+  color: $gray-999;
+  text-decoration: none;
+  cursor: pointer;
+}

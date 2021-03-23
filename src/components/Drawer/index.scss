@@ -1,0 +1,95 @@
+.drawer-layout {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .2);
+
+  .drawer-content {
+    position: absolute;
+    top: 100px;
+    background: $white;
+    bottom: 0;
+    width: 700px;
+    overflow-y: auto;
+    z-index: 100;
+    padding: 30px;
+  }
+
+  .drawer-header {
+    margin-bottom: 40px;
+
+    &__top {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__subTitle {
+      font-size: 14px;
+    }
+
+  }
+
+  .drawer-body {
+    margin-bottom: 40px;
+
+    &__content {
+      font-size: 14px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ececec;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      word-break: break-all;
+
+      &--content {
+        max-height: 200px;
+        overflow-y: auto;
+        white-space: pre-line;
+      }
+    }
+  }
+
+  .drawer-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    text-align: right;
+  }
+}
+
+.mask-show {
+  transition: opacity .3s;
+  opacity: 1;
+  z-index: 200;
+}
+
+.mask-hidden {
+  transition: all .5s;
+  opacity: 0;
+  z-index: -1;
+}
+
+.mask-content__show {
+  right: 0;
+  transition: right .3s;
+}
+
+.mask-content__hidden {
+  right: -700px;
+  transition: right .3s;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-r-40 {
+  margin-right: 40px;
+}
