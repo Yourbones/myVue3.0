@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import DEMAND_POOL from './requirements/index'
 import Layout from '../views/layout/index.vue'
 import Login from '../views/login/index.vue'
 
@@ -13,6 +14,7 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Home',
         component: () => import('../views/home/index.vue'),
       },
+      ...DEMAND_POOL,
     ]
   },
   {
